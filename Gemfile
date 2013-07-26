@@ -26,13 +26,16 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
-
+gem 'activesupport', '4.0.0.rc1'
 group :development do
-  gem 'rspec-rails', '2.0.1'
+  gem 'rspec-rails', '2.14.0'
+  gem 'annotate'
+  gem 'protected_attributes'
+  gem 'devise', '3.0.0.rc'
 end
 
 group :test do
-  gem 'rspec', '2.0.1'
+  gem 'rspec', '2.14.1'
   gem 'webrat', '0.7.1'
   gem 'spork'
 end
