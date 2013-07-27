@@ -4,11 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.rc1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
-
+gem 'bcrypt-ruby', '~> 3.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -26,18 +25,16 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
-<<<<<<< HEAD
-gem "bcrypt-ruby", "~> 3.0.1"
 
-=======
+
 gem 'activesupport', '4.0.0.rc1'
 group :development do
+  gem 'sqlite3'
   gem 'rspec-rails', '2.14.0'
   gem 'annotate'
   gem 'protected_attributes'
   gem 'devise', '3.0.0.rc'
 end
->>>>>>> modeling-users
 
 group :test do
   gem 'rspec', '2.14.1'
