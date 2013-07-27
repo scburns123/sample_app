@@ -9,6 +9,7 @@
 #  created_at :datetime
 #  updated_at :datetime
 #
+<<<<<<< HEAD
 require 'bcrypt'
 
 class User < ActiveRecord::Base
@@ -21,4 +22,12 @@ class User < ActiveRecord::Base
                      uniqueness: { case_sensitive: false }
    has_secure_password
    validates :password, length: { minimum: 6 }
+=======
+
+class User < ActiveRecord::Base
+  attr_accessible :name, :email
+  validates :name, :presence => true
+  :length => { :maximum => 50 }
+  validates :email, :presence => true
+>>>>>>> modeling-users
 end
