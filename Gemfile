@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0rc1'
 gem 'gravatar_image_tag'
-
+gem 'will_paginate'
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
@@ -35,6 +35,7 @@ group :development do
   gem 'annotate'
   gem 'protected_attributes'
   gem 'devise', '3.0.0.rc'
+  gem 'faker'
 end
 
 group :test do
